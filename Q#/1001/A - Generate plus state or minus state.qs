@@ -1,4 +1,4 @@
-# https://codeforces.com/contest/1001/problem/A
+// https://codeforces.com/contest/1001/problem/A
 
 namespace Solution {
     open Microsoft.Quantum.Primitive;
