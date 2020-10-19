@@ -11,16 +11,9 @@ namespace Solution {
             mutable num_0 = new Result[0];
             for (i in 0..(Length(qs)-1)) {
                 set num_q += [M(qs[i])];
-                if (bits0[i]) {
-                    set num_0 += [One];
-                } else {
-                    set num_0 += [Zero];
-                }
+                set num_0 += [bits0[i] ? One | Zero];
             }
-            if (ResultArrayAsInt(num_q) == ResultArrayAsInt(num_0)) {
-                return 0;
-            }
-            return 1;
+            return ResultArrayAsInt(num_q) == ResultArrayAsInt(num_0) ? 0 | 1;
         }
     }
 }
